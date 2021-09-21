@@ -43,7 +43,7 @@ def injectShaderBlocks(_folder, _text):
             shaderImage = folder + "/tmp-" + shaderName + ".png"
             shaderCommand = "glslViewer " + shaderPath + " " + \
                             " ".join(shaderTexturePaths) + \
-                            " -s 0.5 --headless -o " + shaderImage
+                            "--headless -E screenshot," + shaderImage
             print(shaderCommand)
             if not args.skip_image_generation:
                 returnCode = subprocess.call(shaderCommand, shell=True)
