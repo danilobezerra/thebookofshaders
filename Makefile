@@ -8,13 +8,13 @@ clean:
 	rm -rf book.*
 
 all:
-	python2.7 src/parseBook.py  -f tex -f pdf -f epub
+	python src/parseBook.py  -f tex -f pdf -f epub
 
 epub:
-	python2.7 src/parseBook.py -f epub
+	python src/parseBook.py -f epub
 
 pdf:
-	python2.7 src/parseBook.py -f pdf
+	python src/parseBook.py -f pdf
 
 tex:
-	python2.7 src/parseBook.py -f tex
+	python src/parseBook.py -f tex
